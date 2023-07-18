@@ -5,6 +5,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-button routerLink="/alert">alert</ion-button>
-  <ion-button routerLink="/action-sheet">action-sheet</ion-button>
+  <ion-list>
+    <ion-item
+      *ngFor="let componente of componentes"
+      [routerLink]="componente.redirect"
+    >
+      <ion-icon
+        name="{{componente.icon}}"
+        routerLink="{{componente.redirect}}"
+        color="secondary"
+      ></ion-icon>
+      {{componente.name}}
+    </ion-item>
+  </ion-list>
 </ion-content>
