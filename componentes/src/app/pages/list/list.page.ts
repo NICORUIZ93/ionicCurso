@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { Observable } from 'rxjs';
+import { IonList } from '@ionic/angular';
 
 @Component({
   selector: 'app-list',
@@ -9,6 +10,8 @@ import { Observable } from 'rxjs';
 })
 export class ListPage implements OnInit {
   users: Observable<any>;
+  @ViewChild(IonList) ionList: IonList;
+
   constructor(private dataService: DataService) {}
 
   ngOnInit() {
@@ -17,5 +20,15 @@ export class ListPage implements OnInit {
 
   getUser() {
     this.users = this.dataService.getData();
+  }
+
+  favorite(user: any) {
+    console.log('Favorito !!! ', user);
+    this.ionList.closeSlidingItems();
+  }
+
+  delete(user: any) {
+    console.log('Eliminado !!! ', user);
+    this.ionList.closeSlidingItems();
   }
 }

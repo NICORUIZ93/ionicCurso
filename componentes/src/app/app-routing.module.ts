@@ -74,6 +74,23 @@ const routes: Routes = [
       import('./pages/list/list.module').then((m) => m.ListPageModule),
   },
   {
+    path: 'list-reorder',
+    loadChildren: () =>
+      import('./pages/list-reorder/list-reorder.module').then(
+        (m) => m.ListReorderPageModule
+      ),
+  },
+  {
+    path: 'loading',
+    loadChildren: () =>
+      import('./pages/loading/loading.module').then((m) => m.LoadingPageModule),
+  },
+  {
+    path: 'menu',
+    loadChildren: () =>
+      import('./pages/menu/menu.module').then((m) => m.MenuPageModule),
+  },
+  {
     path: '**',
     redirectTo: 'inicio',
     pathMatch: 'full',

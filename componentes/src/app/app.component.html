@@ -1,1 +1,18 @@
-<ion-router-outlet id="main-content"></ion-router-outlet>
+<ion-app>
+  <ion-menu contentId="main-content" menuId="first" side="start" type="overlay">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item *ngFor="let componente of menu | async">
+          <ion-icon slot="start" name="{{ componente.icon }}"></ion-icon>
+          <ion-label>{{ componente.name }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"> </ion-router-outlet>
+</ion-app>
