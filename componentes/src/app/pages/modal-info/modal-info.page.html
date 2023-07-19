@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>modal-info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h1>{{mensaje}}</h1>
+  <ion-button (click)="sinArg()" expand="block" fill="clear" shape="round">
+    Salir sin argumentos
+  </ion-button>
+
+  <ion-button (click)="conArg()" expand="block" fill="clear" shape="round">
+    Salir con argumentos
+  </ion-button>
+</ion-content>

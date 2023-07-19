@@ -68,5 +68,15 @@
     "icon": "american-football",
     "name": "loading",
     "redirect": "/loading"
+  },
+  {
+    "icon": "american-football",
+    "name": "modal",
+    "redirect": "/modal"
+  },
+  {
+    "icon": "american-football",
+    "name": "popover",
+    "redirect": "/popover"
   }
 ]

@@ -8,9 +8,13 @@ import { Componentes } from './interfaces/interfaces';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  
   menu: Observable<Componentes[]>;
+
   constructor(private dataService: DataService) {}
+
   ngOnInit() {
     this.menu = this.dataService.getMenuOps();
   }
+
 }

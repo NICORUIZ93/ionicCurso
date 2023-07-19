@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ActionSheetPageRoutingModule } from './action-sheet-routing.module';
+import { PopoverPageRoutingModule } from './popover-routing.module';
 
-import { ActionSheetPage } from './action-sheet.page';
+import { PopoverPage } from './popover.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    ActionSheetPageRoutingModule,
+    PopoverPageRoutingModule,
     ComponentsModule,
   ],
-  declarations: [ActionSheetPage],
+  declarations: [PopoverPage],
 })
-export class ActionSheetPageModule {}
+export class PopoverPageModule {}
