@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
-import { InicioPageRoutingModule } from './inicio-routing.module';
-
-import { InicioPage } from './inicio.page';
+import { CardPageRoutingModule } from './card-routing.module';
+import { CardPage } from './card.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,9 +11,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    InicioPageRoutingModule,
+    CardPageRoutingModule,
     ComponentsModule,
   ],
-  declarations: [InicioPage],
+  declarations: [CardPage],
 })
-export class InicioPageModule {}
+export class CardPageModule {}

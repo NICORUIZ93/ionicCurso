@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { InicioPageRoutingModule } from './inicio-routing.module';
+import { DatePageRoutingModule } from './date-routing.module';
 
-import { InicioPage } from './inicio.page';
+import { DatePage } from './date.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    InicioPageRoutingModule,
+    DatePageRoutingModule,
     ComponentsModule,
   ],
-  declarations: [InicioPage],
+  declarations: [DatePage],
 })
-export class InicioPageModule {}
+export class DatePageModule {}

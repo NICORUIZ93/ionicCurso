@@ -1,0 +1,35 @@
+<app-header name="grip"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col
+        class="ion-padding"
+        size="12"
+        size-lg="3"
+        size-md="4"
+        size-sm="6"
+        *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]"
+      >
+        <ion-card>
+          <img
+            src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+        </ion-card>
+
+        <ion-card-header>
+          <ion-card-title>Awesome Title</ion-card-title>
+          <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+          enim voluptate earum quasi, nisi fuga, reprehenderit tempore
+          cupiditate ex sunt iure. Nisi esse quae amet alias veniam placeat
+          nesciunt error.
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,38 @@
+<app-header name="fab"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon color="facebook" name="logo-ionic"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon color="facebook" name="logo-angular"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon color="facebook" name="logo-tux"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+
+    <ion-fab-list side="start">
+      <ion-fab-button
+        ><ion-icon color="youtube" name="logo-ionic"></ion-icon
+      ></ion-fab-button>
+      <ion-fab-button
+        ><ion-icon color="youtube" name="logo-angular"></ion-icon
+      ></ion-fab-button>
+      <ion-fab-button
+        ><ion-icon color="youtube" name="logo-tux"></ion-icon
+      ></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let item of data">
+      <ion-label>Awesome Label</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

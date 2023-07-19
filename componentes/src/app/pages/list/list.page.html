@@ -1,0 +1,13 @@
+<app-header name="list"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let user of users | async">
+      <ion-label>
+        <h3>{{user.name}}</h3>
+        <p>{{user.email}}</p>
+      </ion-label>
+      <ion-label slot="end">{{user.phone}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
