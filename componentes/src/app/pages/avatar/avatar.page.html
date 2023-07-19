@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>avatar</ion-title>
+    <ion-button fill="clear" shape="round" slot="end">
+      <ion-avatar>
+        <img
+          alt="Silhouette of a person's head"
+          src="https://ionicframework.com/docs/img/demos/avatar.svg"
+        />
+      </ion-avatar>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item
+      color="tertiary"
+      *ngFor="let item of [1,1,1,1]"
+      class="ion-padding"
+    >
+      <ion-avatar slot="end">
+        <img
+          src="https://cdn.pixabay.com/photo/2023/02/24/07/40/spiderman-7810368_1280.png"
+        />
+      </ion-avatar>
+      <ion-label>Hola</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

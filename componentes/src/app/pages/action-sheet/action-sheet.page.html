@@ -1,5 +1,12 @@
 <app-header name="Action Sheet"></app-header>
 
-<ion-content [fullscreen]="true">
-  <h1>hola mundo</h1>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button id="open-action-sheet">Open</ion-button>
+  <ion-action-sheet
+    trigger="open-action-sheet"
+    class="my-custom-class"
+    header="Example header"
+    subHeader="Example subheader"
+    [buttons]="actionSheetButtons"
+  ></ion-action-sheet>
 </ion-content>

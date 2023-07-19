@@ -10,7 +10,7 @@ interface Componente {
   templateUrl: './inicio.page.html',
   styleUrls: ['./inicio.page.scss'],
 })
-export class InicioPage implements OnInit {
+export class InicioPage {
   componentes: Componente[] = [
     {
       icon: 'american-football',
@@ -29,6 +29,4 @@ export class InicioPage implements OnInit {
     },
   ];
   constructor() {}
-
-  ngOnInit() {}
 }

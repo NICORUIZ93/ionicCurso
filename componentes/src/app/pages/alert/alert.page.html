@@ -1,5 +1,11 @@
 <app-header name="Alert"></app-header>
 
-<ion-content [fullscreen]="true">
-  <h1>alert</h1>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button id="present-alert">Click Me</ion-button>
+  <ion-alert
+    trigger="present-alert"
+    class="custom-alert"
+    header="Are you sure?"
+    [buttons]="alertButtons"
+  ></ion-alert>
 </ion-content>
