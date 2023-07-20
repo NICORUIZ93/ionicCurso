@@ -78,5 +78,25 @@
     "icon": "american-football",
     "name": "popover",
     "redirect": "/popover"
+  },
+  {
+    "icon": "american-football",
+    "name": "progress",
+    "redirect": "/progress"
+  },
+  {
+    "icon": "american-football",
+    "name": "refresher",
+    "redirect": "/refresher"
+  },
+  {
+    "icon": "american-football",
+    "name": "search",
+    "redirect": "/search"
+  },
+  {
+    "icon": "american-football",
+    "name": "segment",
+    "redirect": "/segment"
   }
 ]

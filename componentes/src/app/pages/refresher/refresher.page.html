@@ -1,0 +1,18 @@
+<app-header name="refresher"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher
+    slot="fixed"
+    (ionRefresh)="doRefresh($event)"
+    pullFactor="0.8"
+    pullMin="60"
+    pullMax="120"
+  >
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-list>
+    <ion-item class="animate__animated animate__flash" *ngFor="let item of data"
+      >hola</ion-item
+    >
+  </ion-list>
+</ion-content>
