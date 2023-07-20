@@ -1,16 +1,15 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Albums } from '../interfaces/interfaces';
 
 @Pipe({
   name: 'filtro',
 })
 export class FiltroPipe implements PipeTransform {
-  transform(value: Albums[], texto: string = ''): Albums[] {
+  transform(value: any[], columna: string = '', texto: string = ''): any[] {
     if (texto === '' || !value) {
       return value;
     }
-    return value.filter((album: Albums) =>
-      album.title.toLowerCase().includes(texto.toLowerCase())
+    return value.filter((item) =>
+      item[columna].toLowerCase().includes(texto.toLowerCase())
     );
   }
 }
