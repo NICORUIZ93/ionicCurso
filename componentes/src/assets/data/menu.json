@@ -98,5 +98,15 @@
     "icon": "american-football",
     "name": "segment",
     "redirect": "/segment"
+  },
+  {
+    "icon": "american-football",
+    "name": "tabs",
+    "redirect": "/tabs"
+  },
+  {
+    "icon": "american-football",
+    "name": "toast",
+    "redirect": "/toast"
   }
 ]

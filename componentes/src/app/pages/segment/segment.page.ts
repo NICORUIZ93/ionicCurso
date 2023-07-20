@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { Superheroes } from '../../interfaces/interfaces';
 import { IonSegment } from '@ionic/angular';
+import { Observable } from 'rxjs/internal/Observable';
 
 @Component({
   selector: 'app-segment',
@@ -12,7 +13,7 @@ export class SegmentPage implements OnInit {
   @ViewChild(IonSegment) ionSegment: IonSegment;
   publisher: string = '';
 
-  superheroes: Superheroes[];
+  superheroes: Observable<Superheroes[]>;
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
@@ -24,8 +25,6 @@ export class SegmentPage implements OnInit {
   }
 
   getSuperHeroes() {
-    this.dataService.getSuperHeroes().subscribe((data) => {
-      this.superheroes = data;
-    });
+    this.superheroes = this.dataService.getSuperHeroes();
   }
 }

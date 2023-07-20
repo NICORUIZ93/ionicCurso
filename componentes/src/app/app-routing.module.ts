@@ -132,6 +132,16 @@ const routes: Routes = [
       import('./pages/segment/segment.module').then((m) => m.SegmentPageModule),
   },
   {
+    path: 'tabs',
+    loadChildren: () =>
+      import('./pages/tabs/tabs.module').then((m) => m.TabsPageModule),
+  },
+  {
+    path: 'toast',
+    loadChildren: () =>
+      import('./pages/toast/toast.module').then((m) => m.ToastPageModule),
+  },
+  {
     path: '**',
     redirectTo: 'inicio',
     pathMatch: 'full',
