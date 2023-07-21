@@ -1,5 +1,7 @@
 {
-  "name": "ionic-app-base",
-  "integrations": {},
+  "name": "Noticias",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
